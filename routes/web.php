@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('terceros', 'TerceroController');
+//Route::resource('terceros', 'TerceroController');
 
 Auth::routes();
 

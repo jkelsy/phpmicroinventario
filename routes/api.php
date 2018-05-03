@@ -17,7 +17,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::resource('terceros', 'TerceroController')->middleware('cors');
+Route::resource('terceros', 'TerceroController')->middleware('auth:api');
 Route::resource('ventas', 'VentaController')->middleware('cors');
 Route::resource('pagos', 'PagoController')->middleware('cors');
 Route::get('terceros/{id}/deuda', 'TerceroController@deuda')->middleware('cors');
