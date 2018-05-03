@@ -20,4 +20,11 @@
       0 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
     ),
   ),
+  'laravel/passport' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Laravel\\Passport\\PassportServiceProvider',
+    ),
+  ),
 );
